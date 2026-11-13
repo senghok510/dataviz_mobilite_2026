@@ -1,5 +1,8 @@
 # Send only what the Dockerfile copies: the raw downloads in data/ are several GB.
 *
+# Keep the Dockerfile itself visible: Railway applies this file before detecting how to build.
+!Dockerfile
+!.dockerignore
 !deploy/requirements.txt
 !utils/
 !pipeline/__init__.py
