@@ -91,7 +91,7 @@ uv run python -m pipeline.extra_rail_lines
 The image contains the app and `data/processed/` only (no router, no Java). One worker needs about 520 MB of memory.
 
 ```bash
-docker build -f deploy/Dockerfile -t access-to-work .
+docker build -t access-to-work .
 docker run -d --name access-to-work --restart unless-stopped -p 127.0.0.1:8050:8000 access-to-work
 ```
 

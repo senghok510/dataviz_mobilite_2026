@@ -1,7 +1,8 @@
 # "Access to Work | Île-de-France": Dash app (FastAPI backend) serving the precomputed results.
 #
+# At the repository root so hosting services (Railway, Render...) find and use it automatically.
 # Build and run from the repository root:
-#   docker build -f deploy/Dockerfile -t access-to-work .
+#   docker build -t access-to-work .
 #   docker run -d --name access-to-work --restart unless-stopped -p 127.0.0.1:8050:8000 access-to-work
 #
 # The image holds the app and data/processed/ only (about 18 MB of results). The routing pipeline,

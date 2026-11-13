@@ -1,4 +1,4 @@
-# Send only what deploy/Dockerfile copies: the raw downloads in data/ are several GB.
+# Send only what the Dockerfile copies: the raw downloads in data/ are several GB.
 *
 !deploy/requirements.txt
 !utils/
